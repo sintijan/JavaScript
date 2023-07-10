@@ -1,13 +1,28 @@
-console.log("My javascript");
+//1.uzdevums
+let Fname = "Jānis"
+let age = "19"
+let student = "ir"
+console.log(Fname, age, student)
 
-let age = 25;
-age = 27;
+//2.uzdevums
+let fruit = ["Banana", "Kivi", "Mango", "Aplle"];
+console.log(augļi);
 
-const id =253;
+//3.uzdevums
+let peerson = {
+    Pname: "Jānis",
+    Page: "25",
+    Pstudent: "ir"
+}
 
-console.log("vārds")
-console.log("vecums")
-console.log("irStudents")
+//4.uzdevums
+let X = 5;
+console.log(X);
 
-const augļi = ["Orange", "Banana", "Mango", "Kiwi"];
-console.log("augļi");
+//5.uzdevums
+let y;
+y = 10;
+console.log(y);
+
+//5.uzdevums
+let z = 6;
