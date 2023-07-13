@@ -26,89 +26,54 @@ let s2=5;
 let s3=5;
 console.log(s1==s2+""+s1==s3);
 
-//4.uzdevums
-function uzd4() {
-    let x = 5
-    console.log(x);
+if (x || y) {
+    console.log("Hello");
+} // || vienam ir jābūt true*/
+
+
+//20.nodarbība
+
+//21.nodarbība
+//22.nodarbība
+/*if (10 < 1) {
+    console.log("The condition is true");
 }
-uzd4();
 
-//5.uzdevums
-let y = 10;
-function uzd5() {
-    console.log(y);
+let game1 = "Sonic";
+if (game1 === "Sonic") {
+    console.log("The condition is true");
 }
-uzd5();
 
-//6.uzdevums
-function uzd6() {
-    let x6 = 5;
-    console.log(x6);
-}
-uzd6();
-
-//7.uzdevums
-let z = 4;
-function uzd7() {
-    z = 6;
-    console.log(z);
-}
-uzd7();
-
-//Operatori
-//1.uzdevums
-let x1 = 5;
-let x2 = 6;
-function Op1() {
-    console.log(x1 + x2)
-}
-Op1();
-
-//2.uzdevums
-let num = 10;
-num /= 5;
-console.log(num);
-
-//Plūsma
-//1.uzd.
-let xp1 = 5;
-if (xp1 < 0) {
-    console.log("Negatīvs");
-} else if (xp1 > 0) {
-    console.log("Pozitīvs");
+let game2 = "Sonic";
+if (game2 === "Sonic") {
+    console.log("The condition is true");
 } else {
-    console.log("Nulle");
+    console.log("The condition is false");
 }
 
-//2.uzd.
-let xp2 = 15;
-if (xp2 % 3) {
-    console.log("Dalās");
+let roll = 5;
+if (roll === 4) {
+    console.log("You rolled a four");
+} else if (roll === 5) {
+    console.log("You rolled a five");
+} else if (roll === 6) {
+    console.log("You rolled six");
 } else {
-    console.log("Nedalās");
+    console.log("You rolled less than four");
 }
 
-//3.uzd.
-let xp3 = 5;
-let yp3 = 6;
-if (xp3 > yp3) {
-    console.log("x ir lielāks par y");
+let num = 10 + 2;
+if (num > 2 && num < 20) {
+    console.log("True");
 } else {
-    console.log("x nav lielāks par y");
+    console.log("False");
 }
 
-//4.uzd.
-let diena = "piektdiena";
-switch (diena) {
-    case "pirmdiena":
-        console.log("Nav vēl piektdiena");
-        break;
-    case "piektdiena":
-        console.log("Nedēļas nogale ir gandrīz šeit!");
-        break;
-    default:
-        console.log("Default!");
-}
+let user = "employee";
+if (user === "guest") {
+    console.log("Login Denied");
+} else if (user === "employee");
+console.log("Succesfully loggen in");
 
 //5.uzd.
 for (let i = 0; i <= 20; i++) {
