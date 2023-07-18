@@ -4,11 +4,16 @@ function addTask() {
   const taskInput = document.getElementById('taskInput');
   const task = taskInput.value.trim();
 
-  if (task !== '') {
-    tasks.push( task );
+  if (task === '') {
+
+    alert("You must write something!");
+  } else { 
+    tasks.push(task);
     renderTasks();
   }
+  taskInput.value = '';
 }
+
 
 function renderTasks() {
   const taskList = document.getElementById('taskList');
@@ -20,10 +25,11 @@ function renderTasks() {
 
     listItem.innerHTML = `
     <span class="mr-auto">${task}</span>
-    <button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})">Delete</button>
+    <div style="position:absolute; right:0%"><button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})" style="background-color: red; color: black;">Delete</button></div>
+    <div style="position:absolute; right:100%"><button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="buttonColor(${index})" style="background-color: green; color: black;">Done</button></div>
     `;
-
     taskList.appendChild(listItem);
+
   });
 }
 
@@ -32,3 +38,8 @@ function deleteTask(index) {
   renderTasks();
 }
 
+function buttonColor(index) {
+  const taskList = document.getElementById('taskList');
+  const taskItem = taskList.childNodes[index];
+  taskItem.style.backgroundColor = "lightgreen"; 
+}
